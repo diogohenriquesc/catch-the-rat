@@ -1,35 +1,62 @@
 body {
-    background-color: salmon;
+    background-color: floralwhite;
     height: calc(100vh - 16px);
     font-family: 'Courier New', Courier, monospace;
+    cursor: url('aim-icon.svg'), pointer;
 }
+
+.catched {
+    background-color: salmon;
+}
+
 
 img {
     width: 80px;
 }
 
-button {
+#rat {
     background-color: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
+    cursor: url('aim-icon.svg'), pointer;
 }
 
-.placar {
+.scoreboard {
     background-color: rgba(0, 0, 0, .4);
-    padding: 20px;
     color: white;
+    padding: 15px 30px;
     text-align: center;
     border-radius: 0 0 0 10px;
     font-size: 20px;
+    font-weight: 800;
+    cursor: auto;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.placar a {
+.scoreboard a {
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-style: italic;
+}
+
+.scoreboard button {
+    position: static;
+    margin: 0 auto;
+    border: 2px solid white;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.scoreboard button:hover {
+    color: black;
+    border: 2px solid black;
 }
